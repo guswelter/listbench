@@ -66,6 +66,10 @@ ok  	listbench	48.367s
 |**Traversing & Accessing**    |Slice                         |Slice                                  |
 |**Traversing & Updating**     |Slice (*Linked list* close)   |Slice                                  |
 
+### Range
+
+Use `range` instead of other means (like a `for i := 0; i < len(s); i++` loop) to traverse slices and maps. It is **much** more performant.
+
 ## Tags
 
-#go #golang #map #slice #linkedlist
+#go #golang #map #slice #linkedlist #performance
