@@ -56,3 +56,7 @@ Benchmark_3_SmallObject_LinkedListTraversalAndUpdate-8       	10000000	         
 PASS
 ok  	listbench	48.367s
 ```
+
+## Tags
+
+#go #golang #map #slice #linkedlist
