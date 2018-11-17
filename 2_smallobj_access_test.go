@@ -6,7 +6,7 @@ import (
 
 func Benchmark_2_SmallObject_SliceTraversalAndAccess(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*obj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &obj{id: i}
@@ -29,7 +29,7 @@ func Benchmark_2_SmallObject_SliceTraversalAndAccess(b *testing.B) {
 
 func Benchmark_2_SmallObject_SliceTraversalAndAccessWithRange(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*obj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &obj{id: i}
@@ -52,7 +52,7 @@ func Benchmark_2_SmallObject_SliceTraversalAndAccessWithRange(b *testing.B) {
 
 func Benchmark_2_SmallObject_MapTraversalAndAccess(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*obj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &obj{id: i}
@@ -75,7 +75,7 @@ func Benchmark_2_SmallObject_MapTraversalAndAccess(b *testing.B) {
 
 func Benchmark_2_SmallObject_MapTraversalAndAccessWithRange(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*obj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &obj{id: i}
@@ -98,7 +98,7 @@ func Benchmark_2_SmallObject_MapTraversalAndAccessWithRange(b *testing.B) {
 
 func Benchmark_2_SmallObject_LinkedListTraversalAndAccess(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*obj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &obj{id: i}

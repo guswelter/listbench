@@ -6,7 +6,7 @@ import (
 
 func Benchmark_1_LargeObject_SliceAdd(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*largeobj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &largeobj{id: i}
@@ -24,7 +24,7 @@ func Benchmark_1_LargeObject_SliceAdd(b *testing.B) {
 
 func Benchmark_1_LargeObject_SlicePreSizedAdd(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*largeobj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &largeobj{id: i}
@@ -42,7 +42,7 @@ func Benchmark_1_LargeObject_SlicePreSizedAdd(b *testing.B) {
 
 func Benchmark_1_LargeObject_MapAdd(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*largeobj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &largeobj{id: i}
@@ -60,7 +60,7 @@ func Benchmark_1_LargeObject_MapAdd(b *testing.B) {
 
 func Benchmark_1_LargeObject_MapPreSizedAdd(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*largeobj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &largeobj{id: i}
@@ -78,7 +78,7 @@ func Benchmark_1_LargeObject_MapPreSizedAdd(b *testing.B) {
 
 func Benchmark_1_LargeObject_LinkedListAdd(b *testing.B) {
 
-	// Create the orders
+	// Create the objects
 	o := make([]*largeobj, b.N)
 	for i := 0; i < b.N; i++ {
 		o[i] = &largeobj{id: i}
