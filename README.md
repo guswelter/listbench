@@ -57,6 +57,15 @@ PASS
 ok  	listbench	48.367s
 ```
 
+## Conclusions
+### Best performance
+
+|                              |Small Object                  |Large Object                           |
+|------------------------------|------------------------------|---------------------------------------|
+|**Adding**                    |Linked List, *by far*         |Linked List (*Presized slice* close)   |
+|**Traversing & Accessing**    |Slice                         |Slice                                  |
+|**Traversing & Updating**     |Slice (*Linked list* close)   |Slice                                  |
+
 ## Tags
 
 #go #golang #map #slice #linkedlist
